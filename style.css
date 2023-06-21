@@ -1,0 +1,132 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: salmon;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(23, 13, 174, 0.7)), url(img/background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    position: absolute;
+    font-weight: bold;
+    font-size: 32px;
+    top: 60px;
+    transform: translate(-50%, -50%);
+    right: 50%;
+    left: 50%;
+    color:  rgb(3, 242, 35);
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+p{
+    color:  yellow;
+    position: absolute;
+    top: 60px;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: capitalize;
+    right: 30rem;
+    
+
+}
+img{
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    width: 70px;
+    transform: translatex(-50%);
+}
+
+.Clock{
+    position: relative;
+    background-color: lightgrey;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    border: 5px solid darkgray;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.numbers div {
+    font-size: 27px;
+    font-weight: bold;
+    position: absolute;
+    color: rgb(67, 67, 42);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+
+}
+
+.twelve{
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.three{
+    right: 6px;
+    top: 50%;
+    transform: translatex(-50%, -50%);
+}
+
+.six{
+bottom: 6px;
+left: 50%;
+transform: translatex(-50%);
+}
+
+.nine{
+   left: 6px;
+    top: 50%;
+    transform: translatey(50);
+    
+
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.arrows::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: darkgreen;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    border-radius: 50%;
+    z-index: 4;
+
+}
+.arrows div{
+    background-color: white;
+    position: absolute;
+    width: 7px;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 1px 2px rgba(171, 108, 108, 0.7);
+}
+
+.arrows .hour{
+    height: 80px;
+    transform: rotate(30deg);
+}
+ .arrows .second {
+    transform: rotate(250deg);
+    background-color: goldenrod;
+}
